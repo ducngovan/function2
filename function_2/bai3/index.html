@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function 3</title>
+</head>
+<body>
+<div>
+    nhap so: <input type="text" id="num"  onchange="submit()"/> gia tri giai thua: <input type="text" id="giaithua" disabled/>
+</div>
+<script>
+    function submit() {
+        var num = parseInt(document.getElementById('num').value);
+        document.getElementById('giaithua').value = factorial(num);
+    }
+    function factorial(a) {
+        var gt = 1;
+        for (let i=1; i<=a;i++){
+            gt = gt*i;
+        }
+        return gt;
+        }
+
+
+</script>
+</body>
+</html>

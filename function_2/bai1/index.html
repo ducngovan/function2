@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function 1</title>
+</head>
+<body>
+<div class="content">
+    num: <input type="text" id="num" onchange="submit()"/> num binh phuong: <input type="text" disabled id="dulnum" />
+</div>
+<script>
+function submit() {
+    var num =parseInt(document.getElementById('num').value);
+    document.getElementById('dulnum').value=square(num);
+}
+function square(a) {
+    return a*a;
+}
+</script>
+</body>
+</html>

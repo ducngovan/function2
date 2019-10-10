@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function 9</title>
+</head>
+<body>
+<script>
+    var num=[];
+    for(let i=0; i<5;i++){
+        num[i]=prompt("nhap phan tu thu "+i);
+    }
+    var element = prompt("nhap ky tu: " );
+    document.write(num+ '<br/>');
+    document.write(element+" xuat hien "+count(num,element)+" lan");
+
+    function count(arr, ele) {
+        var count = 0;
+        for(var i=0; i<arr.length; i++){
+            if(ele == arr[i]){
+                count++;
+            }
+        }return count;
+        if(i== arr.length){
+            alert(" khong trung lan nao");
+        }
+
+    }
+</script>
+</body>
+</html>

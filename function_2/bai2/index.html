@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function 2</title>
+</head>
+<body>
+<div>
+    nhap ban kinh(r): <input type="text" id="bankinh" onchange="submit()" /> dien tich: <input type="text" id="dientich" disabled/> chuvi: <input type="text" id="chuvi" disabled />
+</div>
+<script>
+    const pi =3.14;
+    function submit() {
+        var bankinh = parseInt(document.getElementById('bankinh').value);
+        document.getElementById('dientich').value=acreage(bankinh);
+        document.getElementById('chuvi').value=perimeter(bankinh);
+    }
+    function acreage(num) {
+        return pi * num*num;
+
+    }
+    function  perimeter(num) {
+        return pi * 2 * num;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function 5</title>
+</head>
+<body>
+<div>
+    so thu nhat: <input type="text" id="a" />
+    so thu hai: <input type="text" id="b" />
+    so thu ba: <input type="text" id="c" />
+    <button type="button" onclick="check()">Min is: </button>
+    <input type="text" id="result" disabled/>
+</div>
+<script>
+    function check() {
+        var a =parseInt(document.getElementById('a').value);
+        var b =parseInt(document.getElementById('b').value);
+        var c =parseInt(document.getElementById('c').value);
+        document.getElementById('result').value=result(a,b,c);
+    }
+    function result(num1,num2,num3) {
+        var min;
+        if(num1<num2 && num1<num3){
+            min = num1;
+            return min;
+        }else if (num2 < num3){
+            min = num2;
+            return min;
+        }else{
+            min=num3;
+            return num3;
+        }
+    }
+</script>
+</body>
+</html>

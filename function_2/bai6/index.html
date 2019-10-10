@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function 6</title>
+</head>
+<body>
+<div>
+    <H1>kiem tra so nhap vao</H1>
+    <b>  nhap: </b><input type="text" id="element" onchange="check()" /> <b>ket qua: </b><input type="text" id="result" />
+</div>
+<div>
+    True: ky tu nhap vao la so nguyen duong. <br/>
+    False: con lai.
+</div>
+<script>
+    function check() {
+        var element = parseInt(document.getElementById('element').value);
+        document.getElementById('result').value=submit(element);
+    }
+    function submit(a) {
+        if(a>0){
+            return true
+        }else{
+            return false
+        }
+    }
+</script>
+</body>
+</html>
